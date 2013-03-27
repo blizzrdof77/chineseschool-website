@@ -1,0 +1,173 @@
+/*
+FILENAME:styles.css
+DESCRIPTION:This stylesheet serves global declarations for http://kennymeyers.com
+AUTHOR:Matthew Anderson > http://matthew-anderson.net
+*/
+
+@font-face {font-family:'CalgaryCustom';src:url('Calgary_Script.eot');src:local('Calgary Script OT Regular'), local('CalgaryScriptOT'), url('Calgary_Script.otf') format('opentype');}
+
+@font-face {font-family:'MuseoCustom';src:url('Museo300-Regular.eot');src:local('Museo 300'), local('Museo-300'), url('Museo300-Regular.otf') format('opentype');}
+
+body {background:url("../images/bg.jpg");color:#33322e;font:normal 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;text-align:center;}
+
+p {color:rgb(77, 77, 74);color:rgba(48, 47, 43, .5);font-size: 19px;font-weight:300;padding:0 0 40px 0;text-shadow: 0 1px rgba(255, 255, 255, .5);}
+
+.container_12 {clear:left;}
+.wrapper {background:url("../images/bg_wrapper.png") 50% 0 no-repeat;}
+
+.gutter {background:#900 url("../images/bg_ribbon.png");-moz-box-shadow:inset 0 -1px 2px rgba(0, 0, 0, .5);-webkit-box-shadow:inset 0 -1px 2px rgba(0, 0, 0, .5);box-shadow:inset 0 -1px 2px rgba(0, 0, 0, .5);height:10px;}
+
+/* =HEADER */
+.header {margin: 113px auto 0;}
+.logo a {display:block;text-decoration:none;font-size:46px;height: 140px;padding-top:19px;color:#222;}
+
+/* =PROJECTS */
+h2 {color:rgba(48, 47, 43, .8);font-family:MuseoCustom, sans-serif;font-size:26px;font-weight:normal;line-height:30px;margin:auto;text-shadow:0 1px rgba(255, 255, 255, .7);}
+#contact_form {
+
+}
+#contact_form strong {font-size: 20px;display:block;}
+#contact_form input {padding: 7px;border-radius:11px;border: 2px solid #CCC;width:267px;margin: 6px auto 19px;}
+#contact_form textarea {padding: 5px;border-radius:11px;border:2px solid #ccc;width:473px;margin: 13px auto 13px;height: 150px;}
+#contact_form #dialog_link {-webkit-transition:all 0.25s ease-out 0s;
+-moz-transition:all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;-o-transition:all 0.25s ease-out 0s;padding:9px;width:278px;display:block;margin:auto;background:#eee;border:1px outset white;height:22px;}
+#contact_form #dialog_link:hover {background:#ddd;color:#444}
+#contact_form #dialog_link:active {border:1px inset white;}
+.bottom, .bottom li {}
+.bottom li {position:relative;float:left;padding: 9px;text-align:center;margin:-79px auto 0;z-index: 997;}
+
+.bottom a {color:#666;display:inline-block;font-size:16px;font-weight:bold;line-height:33px;text-decoration:none;text-shadow:0 1px rgba(255, 255, 255, .5);text-transform:lowercase;height:135px;margin: auto;text-align: center;float: none;z-index:998;cursor:pointer;}
+
+.bottom .asset .rollover {background-repeat:no-repeat;display:block;height: 114px;margin-bottom:7px;top:0;-moz-transition:all .5s ease;-o-transition:all .5s ease;-webkit-transition:all .5s ease;transition:all .5s ease;width: 114px;border: 1px solid transparent;border-radius:58px;float: none;margin-left: auto;margin-right: auto;opacity:1}
+
+.bottom a .asset {display:block;float:none;margin-left:auto;margin-right:auto;background-position:top center;position:relative;height:116px;width:116px;margin-top:0px;background-color:transparent;margin-bottom: 9px;}
+.bottom a:hover .asset {-moz-transition:all .5s ease;-o-transition:all .5s ease;-webkit-transition:all .5s ease;transition:all .5s ease;margin-top:-4px;}
+.bottom ul#main-navigation:hover  {}
+.bottom a:hover .asset .rollover  {opacity:.9;}
+.bottom a:active .asset .rollover {top:-3px;}
+
+.page .asset .rollover {background-image:url("../images/sprite_personal.png");}
+a:hover .asset .rollover {background-color:rgba(29, 192, 253, .1);}
+
+.page .music .asset .rollover {background-position: 50% 0;}
+.page li.music {float:none;top: 145px;position: relative;}
+.page .shows .asset .rollover {background-position: 75% 0;width: 116px;}
+.page li.shows{float:left;margin-top: 0;margin-left: 1px;position:relative;}
+.page .contact .asset .rollover {background-position: 100% 0;width: 116px;}
+.page li.contact {float:right;margin:auto;margin-top: 0px;position:relative;margin-right: 2px;}
+.page .photos .asset .rollover {background-position: 0 0;}
+.page li.photos {float: none;top: 307px;position:absolute;left: 133px;}
+.page .videos .asset .rollover {background-position: 25% 0;}
+.page li.videos {display: block;left: 385px;position: absolute;top: 316px;float: none;}
+
+/* Different rollover colors for each cirlce
+ * .page .music .asset { background-position: -233px 0; background-color:rgba(255,200,217,.02);}
+  .page .music .asset:hover {background-color:rgba(255,200,217,.5);}
+  .page li.music {float: none;top: 158px;position: relative;}
+.page .shows .asset { background-position: -348px 0; background-color:rgba(253,224,29,.02);}
+  .page .shows .asset:hover {background-color:rgba(253,224,29,.5);}
+  .page li.shows{float: left;margin-top: -28px;margin-left: 13px;position: relative;}
+.page .contact .asset { background-position: -465px 0;background-color:rgba(29,192,253,.02);}
+  .page .contact .asset:hover {background-color:rgba(29,192,253,.5);}
+  .page li.contact {float: right;margin: auto;margin-top: -28px;position: relative;margin-right: 13px;}
+.page .photos .asset { background-position: -1px 0; background-color:rgba(156,23,23,.02);}
+  .page .photos .asset:hover {background-color:rgba(156,23,23,.5);}
+  .page li.photos {float: none;margin: auto;top: 140px;left: 136px;position: absolute;}
+.page .videos .asset {background-position: -117px 0; background-color:rgba(174,196,85,.02);}
+  .page .videos .asset:hover {background-color:rgba(174,196,85,.5);}
+  .page li.videos {float: right;margin: auto;left: 383px; position: absolute;top: 140px;}
+*/
+
+.tag {background-image:url("../images/sprite_tags.png");background-repeat:no-repeat;height:30px;position:absolute;right:-5px;margin-left:-16px;opacity:.15;filter:alpha(opacity = 15);text-indent:-9999px;top:-5px;-moz-transition:all .5s ease;-webkit-transition:all .5s ease;transition:all .5s ease;width:30px;}
+
+.suffix_1 .tag {right:75px;}
+.blue_flavor {background-position:0 0;}
+.be_good_not_bad {background-position:-30px 0;}
+.kevin_tamura {background-position:-60px 0;}
+.things_that_are_brown {background-position:-90px 0;}
+.t_incorporated {background-position:-120px 0;}
+.butter_label {background-position:-150px 0;}
+.e_house_studio {background-position:-180px 0;}
+.tag:hover {opacity:1;filter:alpha(opacity = 100);}
+
+/* =BANNER */
+.banner {background-color:rgb(210, 209, 203);background-color:rgba(0, 0, 0, .1);border-top:1px solid rgba(0, 0, 0, .05);}
+
+.kenny {opacity: .0;filter:alpha(opacity=0);background: url("../images/chinese_teacher.png") top center no-repeat;margin:0 auto 0px auto;width: 618px;position: relative;margin: -48px auto;background-size: 187px auto;height: 284px;}
+.kenny:hover {opacity:0;-webkit-transition:all 0.25s ease-out 0s;-moz-transition:all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;-o-transition:all 0.25s ease-out 0s;cursor:help;}
+
+/* =FOOTER */
+.footer {background-color:rgb(187, 186, 182);background-color:rgba(0, 0, 0, .2);background-image:url("../images/bg_ribbon.png");border-top:1px solid rgba(255, 255, 255, .5);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, .2);-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, .2);box-shadow:inset 0 1px 2px rgba(0, 0, 0, .2);text-align:center;}
+.footer p {color:rgb(77, 77, 74);color:rgba(0, 0, 0, .5);font-size:13px;font-weight:400;line-height:40px;padding:0;text-shadow:0 1px rgba(255, 255, 255, .3);}
+.footer a {color:rgb(77, 77, 74);color:rgba(0, 0, 0, .5);font-weight:bold;text-decoration:none;}
+
+.responsive {display:none;}
+
+.header {width:auto;display:block;}
+.header .logo {float:none;padding:0;}
+.logo a {background-position:50%;}
+
+.responsive p {font-size:13px;}
+.responsive em {color:rgba(48, 47, 43, .8);display:block;font-size:20px;font-style:normal;}
+
+.page {width:100%;display:block;float:none;margin:auto;}
+.grid_12 {width:100%;display:block;margin:0 auto;padding: 0 0 14%;}
+#main-navigation {float:none;margin:auto;display:block;position:relative;text-align:center;width: 652px;height: 338px;top: -125px;}
+
+#no-shadowbox {position:relative;opacity:.7;display: block;border:1px solid #ccc;border-radius:0 0 14px 14px;background:#666;margin: auto;text-align:center;font-size: 14.5px; -moz-transition:all .25s ease;-webkit-transition:all .25s ease;transition:all .25s ease;z-index:999999999;border-top:none;width: 600px;height: 30px;padding-top: 16px;}
+
+#no-shadowbox:hover {opacity:.9;top:-3px;}
+
+#no-shadowbox   a{color: white;text-decoration: none;font-size: 15px;line-height: 24px;-moz-transition:all .25s ease;-webkit-transition:all .25s ease;transition:all .25s ease;}
+#no-shadowbox   a:hover{top: 3px;}
+
+#contextBar {height:400px;position:fixed;right:0;top:106px;width:50px;z-index:10;}
+.barHandle {height:80px;width:50px;background-color:#7BC143;cursor:pointer;float:left;margin:1px 0 0 0;border-radius:10px 0 0 10px;-webkit-border-radius:10px 0 0 10px;-moz-border-radius:10px 0 0 10px;-ms-border-radius:10px 0 0 10px;-o-border-radius:10px 0 0 10px;border-left:1px solid #72AF42;box-shadow:1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.5);-moz-box-shadow:1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.5);-webkit-box-shadow:1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.5);-ms-box-shadow:1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.5);background-image:url(../images/cbBulbOff.png);background-repeat:no-repeat;background-position:2px 1px;}
+.barHandleOut {background-image:url(../images/cbBulbOff.png);background-position:1px 1px;background-repeat:no-repeat;border-left:3px solid #64993a;width:48px;box-shadow:1px 1px 1px rgba(255, 255, 255, 0.25) inset, -2px 1px 2px rgba(0, 0, 0, 0.5);}
+.barHandle:hover {background-color:#72af42;background-position:1px 1px;border-left:3px solid #87ae78;width:48px;box-shadow:1px 1px 1px rgba(255, 255, 255, 0.25) inset, -2px 1px 2px rgba(0, 0, 0, 0.5);}
+.barHandleHightlight {background-image:url(../images/cbBulbOn.png) !important;}
+
+#contextBar #barContent {background-color:#ddd;border-bottom:1px solid #ccc;border-radius:0 0 0 10px;-moz-border-radius:0 0 0 10px;-webkit-border-radius:0 0 0 10px;-ms-border-radius:0 0 0 10px;border-top:1px solid #ccc;box-shadow:0px 2px 7px #999;-moz-box-shadow:0px 2px 7px #999;-webkit-box-shadow:0px 2px 7px #999;-ms-box-shadow:0px 2px 7px #999;padding:10px 0 0 10px;width:264px;margin-left:52px;position:absolute;min-height:80px;}
+div.contact a {-moz-transition:all .25s ease;-webkit-transition:all .25s ease;transition:all .25s ease;opacity:1;color: maroon;}
+div.contact a:hover{opacity:.5;}
+
+#photo-list {position: absolute;height: 116px;width: 116px;top: 11px;}
+#photo-list li {display:none;}
+#photo-list #item-1 {display: block;position: absolute;top: 75px;left: -9px;width: 116px;height: 116px;}
+
+#password {}
+#password-form {display:none;visibility:hidden;position: fixed;width:100%; background: rgba(0, 0, 0, .6);height: 100%;top: 0;margin: 0 auto;-moz-transition:all .25s ease;-webkit-transition:all .25s ease;transition:all .25s ease;}
+
+
+
+#header-top {background:url(../img/top_bg_repeat.jpg) repeat-x top center transparent;height: 11px;}
+#primary h2  {line-height: 56px; margin:0;padding: 0 26px; font-size: 23px;color:#cf4e1d;text-shadow: .5px .5px 1px rgba(207,78,29,.6);}
+#icmhwinners-submit-login {cursor: pointer;border: none;clear: none;text-indent: 0;}
+
+
+#icmhwinners-password  {float: left;width: 177px;border: 1px solid #ddd;height: 31px;margin-right: 4px;padding: 1px 5px;}
+#icmhwinners-password:focus{background: lightyellow;}
+
+fieldset.inner {border:none;display: block;margin: 0 auto;position: relative;text-align: center;float: none;overflow: visible;}
+#download-area {
+    width: 433px;
+    margin: 0 auto;
+    top: 32%;
+    position: relative;
+    z-index: 999999999999999999999;
+    height: 200px;}
+#download-code {float: none; margin: 0 auto;}
+#download-code form {margin: 6px auto 19px;z-index: 999999999999999999999999999999999999999999999999;position: relative;padding: 45px 11px;text-align: left;}
+#password-form strong {font-size: 24px;display: none;}
+#password-form #icmhwinners-password{padding: 6px;height:44px; border-radius: 11px; border: 2px solid #CCC; width: 396px; margin: 6px auto;float: none;position: relative;text-align: center;font-size: 22px;} 
+#password-form  #icmhwinners-submit-login { -webkit-transition: all 0.25s ease-out 0s; -moz-transition: all 0.25s ease-out 0s; transition: all 0.25s ease-out 0s; -o-transition: all 0.25s ease-out 0s; background: none repeat scroll 0 0 #EEEEEE; border: 1px outset white; border-radius: 5px 5px 5px 5px; color: #777777; display: block; float: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; height: 40px; margin: auto; padding: 0 0 2px; position: relative; text-align: center; letter-spacing: 2px; top: 19px; width: 170px; font-size: 16px;}  
+#password-form  #icmhwinners-submit-login:hover {background: #ccc;color: #444;}
+  #icmhwinners-submit-login:active {border: 1px inset orange;border-radius: 4px;}
+  #password-form label {top:-20px;color: #555; position: relative; font-weight: bold; font-size: 22px;font-family:Trebuchet MS}  
+#wrong-code {margin-top:-15px;margin-bottom: 19px;color: #888;}
+  
+#close-password {position:fixed;top:0;opacity: .8;display: block;border:1px solid #ccc;border-radius:0 0 14px 14px;background: #ddd;margin: auto;text-align:center;font-size: 14.5px; -moz-transition:all .25s ease;-webkit-transition:all .25s ease;transition:all .25s ease;z-index:999999999;border-top:none;width: 500px;height: 58px;padding-top: 0;cursor: pointer;margin-left: -39px;}
+#close-password:hover {opacity:.9;top:-3px;}
+
+#close-password  a{color: #555;text-decoration: none;font-size: 20px;line-height: 55px;-moz-transition:all .25s ease;-webkit-transition: all .25s ease;display:block;transition: all .25s ease;position: relative;}
+#close-password  a:hover{}

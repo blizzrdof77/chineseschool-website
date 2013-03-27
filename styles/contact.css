@@ -1,0 +1,31 @@
+#contact_form div {
+     padding-bottom: 5px;
+}
+
+#contact_form div strong {
+     font-family: Rosario,sans-serif;
+}
+
+#contact_form div input {
+     clear: both;
+     display: block;
+     margin: 5px auto 0pt;
+     width: 220px;
+}
+
+#contact_form div textarea {
+     clear: both;
+     display: block;
+     margin: 5px auto 0pt;
+     width: 550px;
+}
+				#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+				div#dialog{padding:0!important; margin: 0 auto!important;}
+				div#dialog p{font-size:12px!important; padding:0px!important; margin:0!important;}
+				span.ui-button-text{ font-size:12px!important;}
+				span#ui-dialog-title-dialog{margin: auto!important;text-align: center!important;float: none!important;font-size:16px!important; font-family:"amaranth"!important;}
+				.ui-dialog-buttonpane{margin:0!important; padding: 0!important;}
+			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+			ul#icons {margin: 0; padding: 0;}
+			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+			ul#icons span.ui-icon {float: left; margin: 0 4px;}

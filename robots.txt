@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /shows.php
+Disallow: /config.php
+Disallow: /contact.php
+Disallow: /mailform.php
